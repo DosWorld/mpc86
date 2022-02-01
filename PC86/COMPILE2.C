@@ -8,7 +8,7 @@
 /*                                                              */
 /*      REQUIRES:   Modules parser, symbol table, scanner,      */
 /*                          code, error                         */
-/*								                                */
+/*                                                                                                */
 /*      USAGE:      compile2 sourcefile objectfile              */
 /*                                                              */
 /*          sourcefile      [input] source file containing the  */
@@ -21,8 +21,6 @@
 /*      For instructional purposes only.  No warranties.        */
 /*                                                              */
 /****************************************************************/
-
-#include "stdafx.h"
 
 #include <stdio.h>
 
@@ -54,7 +52,7 @@ void main(int argc, char *argv[])
     --  use the standard output file.
     */
     code_file = (argc == 3) ? fopen(argv[2], "w")
-			    : stdout;
+                            : stdout;
 
     /*
     --  Initialize the scanner.
@@ -67,4 +65,3 @@ void main(int argc, char *argv[])
     get_token();
     program();
 }
-

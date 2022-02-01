@@ -1,9 +1,0 @@
-# Microsoft Developer Studio Generated Dependency File, included by PC65.mak
-
-.\PC65.cpp : \
-	".\StdAfx.h"\
-	
-
-.\StdAfx.cpp : \
-	".\StdAfx.h"\
-	
